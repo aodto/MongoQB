@@ -20,7 +20,7 @@ class Builder
         'persist'   =>  true,
         'persist_key'   =>  'mongoqb',
         'replica_set'   =>  false,
-        'query_safety'  =>  'safe'
+        'query_safety'  =>  'w'
     );
 
     /**
@@ -85,7 +85,7 @@ class Builder
      * @var string
      * @access protected
      */
-    protected $_querySafety = 'safe';
+    protected $_querySafety = 'w';
 
     /**
      * Selects array.
