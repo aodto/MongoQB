@@ -7,7 +7,7 @@ Add the following into your composer.json file:
 ```javascript
 {
 	"require": {
-		"alexbilbie/mongoqb": "*"
+		"aodto/mongoqb": "*"
 	}
 }
 ```
@@ -21,23 +21,23 @@ composer install
 ## Install via Git
 
 ```bash
-git clone git://git@github.com:alexbilbie/MongoQB
+git clone git://git@github.com:aodto/MongoQB
 ```
 
 ## Download a zip/tarball
 
 Download the latest version:
 
-* [zip](https://github.com/alexbilbie/MongoQB/archive/master.zip)
-* [tar](https://github.com/alexbilbie/MongoQB/archive/master.tar.gz)
+* [zip](https://github.com/aodto/MongoQB/archive/master.zip)
+* [tar](https://github.com/aodto/MongoQB/archive/master.tar.gz)
 
 (Note the zip/tarball won't include any unit tests or composer files)
 
 ## Unit tests
 
-Master branch [![Build Status](https://secure.travis-ci.org/alexbilbie/MongoQB.png?branch=master)](https://travis-ci.org/alexbilbie/MongoQB)
+Master branch [![Build Status](https://secure.travis-ci.org/aodto/MongoQB.png?branch=master)](https://travis-ci.org/aodto/MongoQB)
 
-Develop branch [![Build Status](https://secure.travis-ci.org/alexbilbie/MongoQB.png?branch=develop)](https://travis-ci.org/alexbilbie/MongoQB)
+Develop branch [![Build Status](https://secure.travis-ci.org/aodto/MongoQB.png?branch=develop)](https://travis-ci.org/aodto/MongoQB)
 
 The library currently has 100% unit test coverage. To run the unit test suite make sure you have MongoDB installed locally and running with no authentication and on the default port - 27017.
 
@@ -45,7 +45,7 @@ Then run:
 
 ```bash
 composer update --dev
-cd vendor/alexbilbie/mongoqb
+cd vendor/aodto/mongoqb
 phpunit -c tests/phpunit.xml
 ```
 
@@ -100,7 +100,7 @@ $results = $qb
 	->get('collectionName');
 ```
 
-If you find any bugs please file a report in the [Issue tracker](https://github.com/alexbilbie/MongoQB/Issues)
+If you find any bugs please file a report in the [Issue tracker](https://github.com/aodto/MongoQB/Issues)
 
 If you find this software useful please consider donating, thank you =]
 
