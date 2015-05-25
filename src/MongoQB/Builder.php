@@ -1465,6 +1465,11 @@ class Builder
 
         return new \MongoDate($timestamp);
     }
+    
+    public function setReadPreference($readPerference, $tags=array()){
+        $this->_connection->setReadPreference($readPerference, $tags);
+        return $this;
+    }
 
     /**
      * last_query.
@@ -1501,6 +1506,18 @@ class Builder
             $options['replicaSet'] = $this->_replicaSet;
 
         } // @codeCoverageIgnoreEnd
+        
+        if (isset($this->_configData['username'])) {
+            $options['username'] = $this->_configData['username'];
+        }
+        
+        if (isset($this->_configData['password'])) {
+            $options['password'] = $this->_configData['password'];
+        }
+        
+        if (isset($this->_configData['db'])) {
+            $options['db'] = $this->_configData['db'];
+        }
 
         try {
             // @codeCoverageIgnoreStart
